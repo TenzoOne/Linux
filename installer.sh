@@ -1,5 +1,30 @@
 #!/bin/sh
 
+# Colors
+Blue='\e[0;34m'         # Blue
+White='\e[0;37m'        # Whitew
+
+
+echo ""
+sleep 0.1
+echo -e $Blue "${white}................................................................${white}"
+sleep 0.1
+echo -e "$white    __                             ________ $white "
+sleep 0.1
+echo -e "$white  _/  |_  ____   ____ ____________ \_____  \   ____   ____ $white  "
+sleep 0.1
+echo -e "$white  \   __\/ __ \ /    \\___   /  _ \ /   |   \ /    \_/ __ \ $white"
+sleep 0.1
+echo -e "$white   |  | \  ___/|   |  \/    (  <_> )    |    \   |  \  ___/ $white"
+sleep 0.1
+echo -e "$white   |__|  \___  >___|  /_____ \____/\_______  /___|  /\___  > $white"
+sleep 0.1
+echo -e "$white             \/     \/      \/             \/     \/     \/ $white"
+echo -e $Blue "${white}................................................................${white}"
+echo -e "| [!]  | TenzoOne's Configuration | Ver.0.1  |"
+
+
+
 echo installing curl
 
 sudo apt install curl
@@ -42,7 +67,7 @@ echo installing neovim configurations
               https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 
-echo  create and execute nvim nvim ~/.config/nvim/init.vim
+echo " $white create and execute nvim nvim ~/.config/nvim/init.vim  or take repository configuration $white "
 echo execute nvim and :PlugInstall
 
 
