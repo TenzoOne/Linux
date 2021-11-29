@@ -57,6 +57,22 @@ echo " $white create and execute nvim nvim ~/.config/nvim/init.vim  or take repo
 echo execute nvim and :PlugInstall
 }
 
+function VsCode
+{
+sudo snap install --classic code
+}
+
+function NodeJs
+{
+ sudo apt install nodejs
+ sudo apt install npm
+}
+
+function Typescript
+{
+sudo npm install --global typescript
+}
+
 function End
 {
 echo "CREATED BY TenzoOne"
@@ -79,6 +95,9 @@ echo -e "	    Select an option
  [1]   NeoVim 
  [2]   Tweak
  [3]   Zsh
+ [4]   VsCode
+ [5]   NodeJs
+ [6]   Typescript
 
      q) exit"
 
@@ -89,6 +108,9 @@ case $option in
 1)NeoVim;;
 2)Tweak;;
 3)Zsh;;
+4)VsCode;;
+5)NodeJs;;
+6)Typescript;;
 q)End;;
 *) echo " \"$option\" Is Not A Valid Option"; sleep 1 ;;
 esac
