@@ -30,7 +30,6 @@ function Curl
 sudo apt install curl
 }
 
-
 function Zsh
 {
 sudo apt install zsh
@@ -43,7 +42,6 @@ function Tweak
 {
 sudo apt-get install tweak
 }
-
 
 function NeoVim
 {
@@ -73,6 +71,20 @@ function Typescript
 sudo npm install --global typescript
 }
 
+function Bspwm 
+{
+sudo apt-get install bspwm polybar suckless-tool
+mkdir ~./.config/bspwm
+mkdir ~./.config/sxhkd
+mkdir ~./.config/polybar
+
+
+cp ~/Linux/.config/bspwm/bspwmrc ~/.config/bspwm/
+cp ~/Linux/.config/sxhkd/sxhdrc ~/.config/sxhkd/
+cp ~/Linux/.config/polybar/config ~/.config/polybar/ 
+chmod +x ~/.config/polybar/launch.sh
+}
+
 function End
 {
 echo "CREATED BY TenzoOne"
@@ -80,17 +92,14 @@ echo
 sleep 1
 exit
 }
-
-
 #Menu
-
 while :
 do
 clear
 TenzoOneLogo
 echo -e "                                                      "
 echo -e "		 MENU"
-echo -e "                           			       "
+echo -e "                           			               "
 echo -e "	    Select an option
  [1]   NeoVim 
  [2]   Tweak
@@ -116,5 +125,3 @@ q)End;;
 esac
 
 done
-
-
